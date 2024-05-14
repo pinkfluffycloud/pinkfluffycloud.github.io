@@ -1,15 +1,9 @@
 /* marquee */
-.marquee-container {
-  width: 100%;
+.marquee {
   position: fixed;
   bottom: 0;
-  left: 0;
   overflow: hidden;
   background-color: aliceblue;
-}
-
-.marquee {
-  display: inline-block;
 }
 
 .marquee:hover {
