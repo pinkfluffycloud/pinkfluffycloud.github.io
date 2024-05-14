@@ -5,27 +5,46 @@
 	<title>
 		a website
 	</title>
-	<meta name="generator" content="BBEdit 15.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="cube.css">
 	<script src="script.js"></script>
+	<script type="module">
+  		import { rainbowCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+  		new rainbowCursor();
+  		window.addEventListener("load", (event) => {
+  			new cursoreffects.rainbowCursor();
+		});
+	</script>
 </head>
 <body>
 	<div class="container">
-	<div class="cube">
-	<div class="face front"></div>
-	<div class="face back"></div>
-	<div class="face right"></div>
-	<div class="face left"></div>
-	<div class="face top"></div>
-	<div class="face bottom"></div>
-	</div>
+		<div class="cube">
+			<div class="face front"></div>
+			<div class="face back"></div>
+			<div class="face right"></div>
+			<div class="face left"></div>
+			<div class="face top"></div>
+			<div class="face bottom"></div>
+		</div>
 	</div>
 	<div class="header">
 		<h1><i>Hello, World</i></h1>
 	</div>
 	<div class="section1">
 		<p>hello! this is a website. Visit some links below!</p>
+	</div>
+	<div class="section2">
+		<p>Check out the <a href="imgallery/index.html">imgallery</a>. 
+		<br>
+		a collection of some images that you can edit at anytime! Additionally, you can contribute yourself with a bash script linked below</p>
+	</div>
+
+	<!-- bottom bar -->
+	<div class="bar" style="position: fixed;bottom: 0;background-color: aliceblue;">
+		<marquee>
+			Hello! This website is hosted with ❤️ by Github Pages! Check out Github Pages <a href="https://github.io">here</a>.
+			I am a bottom bar created with the marquee html element. check my source code <a href="https://github.com/pinkfluffycloud/pinkfluffycloud.github.io">here</a>.
+		</marqueee>
 	</div>
 </body>
 </html>
